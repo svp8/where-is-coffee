@@ -1,0 +1,8 @@
+<div>
+    <p>Where is coffee?</p>
+    <form [formGroup]="logForm" (ngSubmit)="onSubmit()">
+        <input type="text"  placeholder="Username" formControlName='login'/>
+        <input type="text" placeholder="Password" formControlName='password'/>
+<button type="submit" [disabled]="!logForm.valid">Sign in </button>
+    </form>
+</div>
