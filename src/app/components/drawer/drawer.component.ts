@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import {MatButtonModule} from '@angular/material/button';
 @Component({
   selector: 'app-drawer',
   templateUrl: './drawer.component.html',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DrawerComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router:Router) { }
+  profile:boolean=false;
   ngOnInit(): void {
   }
-
+  onProfile(){
+    this.profile=!this.profile;
+  }
 }

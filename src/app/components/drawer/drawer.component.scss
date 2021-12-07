@@ -1,11 +1,49 @@
 .drawer{
-    position: absolute;
-    width: 360px;
+  position: absolute;
+  width: 30%;
+  max-width: 320px;
+    margin-top: 10px;
     padding: 30px;
-    height: 100%;
-    background-color: #fdfafa;
+    height: 89%;
+    background-color: #f1eded;
     right: 0%;
     top: 0;
+    border-radius: 5px 0px 0px 5px;
+    h2{
+      margin:3px;
+      padding: 0;
+      font-weight: 500;
+      margin-bottom: 5px;
+      
+    } 
+    .back-btn{
+      // border:1px solid #533f3f
+    //   -webkit-box-shadow: 0px 0px 30px 0px rgba(247,149,29,0.5);
+    // -moz-box-shadow: 0px 0px 30px 0px rgba(247,149,29,0.5);
+    box-shadow: 0px 0px 30px 0px rgba(124, 139, 134, 0.5);
+    }
+    .profile{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // border:1px solid #5957f9;
+      padding: 3px;
+      border-radius: 3px;
+      margin-bottom: 5px;
+      
+      .name{
+        margin: unset;
+        padding: unset;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .email{
+        margin: unset;
+        padding: unset;
+        font-size: 14px;
+        opacity: 0.8;
+      }
+    }
     .search-block {
         border: 1px solid rgb(197, 197, 197);
         border-radius: 10px;

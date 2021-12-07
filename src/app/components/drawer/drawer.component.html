@@ -1,14 +1,33 @@
 <div class="drawer">
-    <div class="profile">
+    <button mat-icon-button class="back-btn" *ngIf="profile" type="button" (click)="onProfile()"><mat-icon> arrow_back </mat-icon></button>
+    <div *ngIf="!profile">
+        <div class="profile">
+            <div>
+                <h5 class="name">Username</h5>
+                <p class="email">clark@zmail.com</p>
+            </div>
+            <img class="profile-image" src="assets/icon.png" style="width: 30px;height: 30px;" (click)="onProfile()" />
+        </div>
+        <hr class="line-color">
+        <div class="search-block">
+            <img src="/assets/search.png" alt="Search" />
+            <input type="text" />
+        </div>
+        <div>
+            <h2>Your cafés</h2>
+            <div>
+                <p>Кофейня 1</p>
+                <p>Кофейня 1</p>
+                <p>Кофейня 1</p>
+            </div>
+            <h2> Popular cafés</h2>
+            <div>
+                <p>Кофейня 2</p>
+                <p>Кофейня 2</p>
+                <p>Кофейня 2</p>
+            </div>
+        </div>
+    </div>
+    <app-profile *ngIf="profile"></app-profile>
 
-    </div>
-    <div class="search-block">
-        <img src="/assets/search.png" alt="Search" />
-        <input type="text" />
-    </div>
-    <div>
-        <p>Кофейня 1</p>
-        <p>Кофейня 1</p>
-        <p>Кофейня 1</p>
-    </div>
 </div>

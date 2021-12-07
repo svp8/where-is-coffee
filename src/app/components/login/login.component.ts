@@ -8,17 +8,17 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private formbuilder:FormBuilder,private router:Router) { }
+  constructor(private formbuilder: FormBuilder, private router: Router) { }
 
-  public logForm=this.formbuilder.group({
+  public logForm = this.formbuilder.group({
     login: '',
     password: ''
   })
   ngOnInit(): void {
   }
-  public onSubmit(){
-console.log(this.logForm.get("login")?.value);
-this.router.navigateByUrl("home");
+  public onSubmit() {
+    console.log(this.logForm.get("login")?.value);
+    this.router.navigateByUrl("home");
   }
 
 }
